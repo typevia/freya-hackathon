@@ -145,7 +145,8 @@ fn artifact_redaction_preserves_bank_schema_and_template_defaults() {
 
 #[test]
 fn promise_guards_and_confirmation_provenance_are_compiler_owned() {
-    let spec: Value = serde_json::from_str(include_str!("../testdata/practice-openapi.json")).unwrap();
+    let spec: Value =
+        serde_json::from_str(include_str!("../testdata/practice-openapi.json")).unwrap();
     let mut plan = json!({"system_prompt":"synthetic test", "initial_node":"collect","nodes":{
         "collect":{"kind":"conversation","prompt":"Confirm the terms","extraction":[{"name":"confirmed","description":"Explicit user confirmation","values":["yes","no"]}],"routes":[{"target":"validate","when":{"kind":"always"}}],"fallback":"failed"},
         "validate":{"kind":"code","code":"try:\n    vars['valid_payment'] = 'yes'\nexcept Exception:\n    vars['valid_payment'] = 'no'\n","fallback":"write"},

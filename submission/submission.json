@@ -1,0 +1,19 @@
+{
+  "team": "br",
+  "members": [
+    {
+      "name": "Rohat Tuna Çiftçi",
+      "email": "rohattunaciftci@gmail.com"
+    },
+    {
+      "name": "Barış Saygı",
+      "email": "barissaygi18@gmail.com"
+    }
+  ],
+  "repo": "https://github.com/typevia/freya-hackathon",
+  "commit": "413f5fb37afdce4b2810afc713aa587f8fd1555d",
+  "run_command": "BUILDER_REASONING_EFFORT=low BUILDER_MAX_COMPLETION_TOKENS=26000 BUILDER_MODEL_CACHE_TRACE=traces/generation-source.json CARGO_TARGET_DIR=target-builder cargo run --locked -- build-folder --case-folder {case_folder} --mock-url {mock_url} --output output/final --max-iterations 2 --budget-seconds 720 --tests-limit 2",
+  "workflow": "submission/final.workflow.json",
+  "trace": "submission/builder-trace.json",
+  "mock_url": "https://freya-final-bank-mock.barissaygi18.workers.dev"
+}

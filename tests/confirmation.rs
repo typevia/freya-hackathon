@@ -269,7 +269,8 @@ fn fixed_nonwaiting_code_speech_can_precede_close_call() {
 
 #[test]
 fn missing_promise_operation_returns_error_not_panic() {
-    let mut spec: Value = serde_json::from_str(include_str!("../testdata/practice-openapi.json")).unwrap();
+    let mut spec: Value =
+        serde_json::from_str(include_str!("../testdata/practice-openapi.json")).unwrap();
     spec["paths"]
         .as_object_mut()
         .unwrap()
