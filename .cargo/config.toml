@@ -1,0 +1,3 @@
+[build]
+# The supplied kit's target/ directory is not writable in some workspaces.
+target-dir = "target-builder"

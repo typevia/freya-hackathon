@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+*.env
+.DS_Store
+/target/
+/target-builder/
+/output/
+/node_modules/
+/mock/node_modules/
+/mock/.wrangler/
+/mock/dist/
+__pycache__/
+*.pyc
+.build-lock/

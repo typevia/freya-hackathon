@@ -1,0 +1,5 @@
+# PDF parser dependency
+
+Official PyPI pypdf 6.20.0 wheel, retained for offline document ingestion when no text companion is supplied. Its upstream license is inside the wheel.
+
+SHA256: `f003fc2014814d264fe7dd3f9d435c158e23e1a85a2233f87a0a2d6d21c914ad`
